@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">OSBlack Prompt Architect</string>
+    <string name="title_activity_main">OSBlack Prompt Architect</string>
+    <string name="package_name">com.osblack.promptarchitect</string>
+    <string name="custom_url_scheme">com.osblack.promptarchitect</string>
+</resources>

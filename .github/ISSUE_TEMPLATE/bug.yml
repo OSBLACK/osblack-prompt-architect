@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible OSBlack Prompt Architect problem
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Remove private prompts, credentials, and personal information before submitting.
+  - type: input
+    id: version
+    attributes:
+      label: Version and platform
+      placeholder: 0.2.0-beta.1, web / Android / iOS, OS version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
