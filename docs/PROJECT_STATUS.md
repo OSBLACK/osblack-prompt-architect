@@ -16,8 +16,8 @@
 | Native Android project | Working in source | Capacitor 8.5.3 project generated and synced; canonical ID is `com.osblack.promptarchitect` |
 | Signed Android APK | Blocked | Gradle download cannot run through the Java network path in this environment; Android SDK, owner signing material, and physical-device testing are still required |
 | Native iOS project | Working in source | Xcode project and Capacitor Swift package exist and synced on 2026-11-13 |
-| iOS compilation and TestFlight | Blocked | macOS/Xcode, final bundle ID, Apple account/signing, and device test required |
-| Public GitHub repository | Prepared for publication | Owner GitHub is `OSBLACK`; sanitized source, MIT license, CI, documentation, and canonical app ID are ready for authenticated repository creation |
+| iOS compilation and TestFlight | Blocked | macOS/Xcode, Apple account/signing for `com.osblack.promptarchitect`, and device testing are required |
+| Public GitHub repository | Published | Public source is at `OSBLACK/osblack-prompt-architect`; commit `8e469cb` is on `main` and its GitHub Actions CI run passed on 2026-11-13 |
 
 ## Canonical mobile decision — 2026-11-13
 
@@ -40,7 +40,7 @@ This repository's official mobile implementation is the shared Vite/Capacitor pr
 
 ## Next exact steps
 
-1. Create the public `OSBLACK/osblack-prompt-architect` repository and upload this verified tree.
-2. Run CI on the published commit and create a source-only beta release only after links and release notes are checked.
-3. Compile/sign Android in an Android SDK environment controlled by the owner, then test on a physical Android device.
-4. Compile/test iOS on macOS with Xcode and the owner's Apple signing account.
+1. Create a clearly labeled source-only beta release after checking the public release notes; do not attach the unrelated legacy Expo AAB.
+2. Compile/sign Android in an Android SDK environment controlled by the owner, then test on a physical Android device.
+3. Compile/test iOS on macOS with Xcode and the owner's Apple signing account.
+4. Perform browser visual QA from an environment that can reach the local preview server.
